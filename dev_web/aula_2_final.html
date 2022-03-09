@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Setting stuff -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+
+    <!-- Define style -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        .vl {
+          border-left: 1px solid grey;
+          height: 1rem;
+        }
+        
+        body {
+            background-color: #cce6e6;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%;
+        }
+
+        .navbar {
+            font-size: 1rem;
+            text-align: center;
+            display: block;   
+            float: right; 
+            justify-items: center;
+            padding-right: 1rem;
+        }
+        
+        p.p1 {
+            background-color: black;
+            color: white;
+            text-align: center
+        }
+
+        p.texto {
+            padding-left: 10rem;
+            padding-right: 20rem;
+            text-justify: distribute;
+            font-family: Inconsolata;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a class="navbar" href="#">Home</a>
+        <div class="navbar vl"></div>
+        <a class="navbar" href="https://upf.br">UPF</a>
+        <div class="navbar vl"></div>
+        <a class="navbar" href="https://ead.upf.br">Moodle</a>
+    </div>
+
+    <!-- New line and horizontal line-->
+    <br>
+    <hr>
+
+    <!-- Standalone text -->
+    <div id="paragraph">
+        <h1>Parágrafo</h1>
+        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl eget nisi malesuada lobortis eget at velit. Integer sit amet nunc vitae odio maximus consectetur. Praesent ac elementum purus, vel tempus sem. Aliquam erat volutpat. Curabitur tempor lacus eu rhoncus dapibus. Praesent hendrerit iaculis est, nec accumsan ipsum dictum sit amet. Etiam nec leo cursus, gravida urna non, posuere ex. Sed posuere mauris odio, eget elementum eros dapibus sed. Nullam nunc nisi, imperdiet ac odio mollis, gravida dignissim lectus. Donec at finibus elit, sit amet mollis erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec maximus, odio non vestibulum ornare, tellus enim interdum arcu, scelerisque blandit nibh ante in lectus. Pellentesque pulvinar est neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris vehicula condimentum risus, ac faucibus tellus ultricies non. Cras at enim tristique, suscipit tellus a, malesuada ex. Fusce gravida interdum ipsum, ac iaculis ligula tempus sed. Morbi sit amet quam a diam ultrices euismod vel vitae enim. Donec hendrerit massa at ex rutrum, vel consectetur mi mattis. Duis euismod quam vitae ex sollicitudin porta. </p>
+    </div>
+
+    <!-- Multiple text examples -->
+
+    <div id="text">
+        <h1>Texto</h1>
+
+        <h2>Texto pré-formatado</h2>
+        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl eget nisi malesuada lobortis eget at velit. Integer sit amet nunc vitae odio maximus consectetur. Praesent ac elementum purus, vel tempus sem. Aliquam erat volutpat. Curabitur tempor lacus eu rhoncus dapibus. Praesent hendrerit iaculis est, nec accumsan ipsum dictum sit amet. Etiam nec leo cursus, gravida urna non, posuere ex. Sed posuere mauris odio, eget elementum eros dapibus sed. Nullam nunc nisi, imperdiet ac odio mollis, gravida dignissim lectus. </p>
+        
+        <h2>Elemento itálico</h2>
+        <p>Lorem <i>ipsum</i> dolor sit amet</p>
+        
+        <h2>Texto subscrito e sobrescrito</h2>
+        <p>Lorem <sub>ipsum</sub> dolor sit <sup>amet</sup></p>
+        
+        <h2>Marca texto</h2>
+        <p>Lorem <mark>ipsum</mark> dolor sit <mark>amet</mark></p>
+        
+        <h2>Texto sublinhado</h2>
+        <p>Lorem ipsum dolor <u>sit amet</u></p>
+    </div>
+
+    <hr>
+    
+    <!-- Footer -->
+    <div id="footer">
+        <img class="center" src="https://www.upf.br/Assets/img/portal/footer/logo-vertical-tag.png" alt="">
+        <p align="center">© 2022 Copyright Universidade de Passo Fundo</p>
+    </div>
+</body>
+</html>
