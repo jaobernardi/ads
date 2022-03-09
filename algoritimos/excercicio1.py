@@ -51,7 +51,7 @@ def main():
         # Get item's info.
         value = get_input("[?] Valor do item: ", float)
         weight = get_input("[?] Peso do item: ", float) if value else None
-        if not value and not weight:
+        if value == None and weight == None:
             # Quit if info is trash
             print("Falha ao processar as informações do item.")
             return
