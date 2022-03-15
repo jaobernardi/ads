@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+    <hr>
+
+    <h2>Faça você mesmo #1</h2>
+    <table align="center" border="1">
+        <caption>Catálogo da Meta & Cia</caption>
+        <thead>
+            <tr style="background-color: yellow;">
+                <th colspan="4" style="color: black">Tabela de preços</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Seminovos</td>
+                <td>Tromepete</td>
+                <td>Trompa</td>
+                <td>Trombone</td>
+            </tr>
+            <tr>
+                <td>$500</td>
+                <td>$640</td>
+                <td>$650</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Visite nossa loja</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <h2>Faça você mesmo #2</h2>
+
+    <table border="1" align="center">
+        <thead>
+            <tr style="background-color: yellow;">
+                <th colspan="5" style="color: black">Lista ordenada</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Numérica</td>
+                <td>Letra</td>
+                <td>Romanos</td>
+                <td>Desordenada</td>
+                <td>Por definição</td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li>Nome</li>
+                        <li>Telefone</li>
+                        <li>Endereço</li>
+                        <li>País</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol type="a">
+                        <li>Nome</li>
+                        <li>Telefone</li>
+                        <li>Endereço</li>
+                        <li>País</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol type="I">
+                        <li>Nome</li>
+                        <li>Telefone</li>
+                        <li>Endereço</li>
+                        <li>País</li>
+                    </ol>
+                </td>
+                <td>
+                    <ul>
+                        <li>Nome</li>
+                        <li>Telefone</li>
+                        <li>Endereço</li>
+                        <li>País</li>
+                    </ul>
+                </td>
+                <td>
+                    <dl align="left">
+                        <dt>Html</dt>
+                        <dd>Html Básico</dd>
+                        <dd>Html Avançado</dd>
+                        <dt>PHP</dt>
+                        <dd>PHP Básico</dd>
+                        <dd>PHP Intermediário</dd>
+                        <dd>PHP Básico</dd>
+
+                    </dl>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <hr>
+    <h2>Estilizando colunas</h2>
+    <table border="1" align="center">.
+        <colgroup>
+            <col style="background-color: grey;">
+        </colgroup>
+
+        <caption>
+            <h2>Colgrup e col e Mesclando colunas</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th colspan="2">Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">João</td>
+                <td>+55 54 0000-0000</td>
+                <td>+55 54 0000-0000</td>
+            </tr>
+
+            <tr>
+                <td>+55 54 0000-0000</td>
+                <td>+55 54 0000-0000</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <hr>
+    <h2>Mesclando células</h2>
+    <table border="1" align="center">
+        <caption>
+            <h2>Mesclando linhas</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th colspan="2">Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>+55 54 0000-0000</td>
+                <td>+55 54 0000-0000</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>+55 54 0000-0000</td>
+                <td>+55 54 0000-0000</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <hr>
+    <h2>Item vazio</h2>
+    <table border="1" align="center">
+        <caption>
+            <h2>Tabela de alunos</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>19</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>tfooter</td>
+                <td>tfooter</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
