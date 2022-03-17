@@ -26,7 +26,7 @@ def main():
         elif (age>= 18 and age <= 25):
             classificacao = "Adulto"
         else:
-            classificacao = "Indefinida"
+            classificacao = "indefinida, pois está fora da faixa determinada."
         print(f"[!] A classificação é {classificacao}")
         return
     print("[!] Inforamções inválidas")

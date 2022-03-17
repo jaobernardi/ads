@@ -19,12 +19,13 @@ def main():
     letterZ = get_input("[?] Valor de Z: ", float) if letterY != None else None
     final = 0
     if letterX and letterY and letterZ != None:
+
         if (letterX > letterY or letterZ <= 20):
             final = letterX * 2
         else:
             letterX = letterX/2
-            letterY = letterY/5
-            final = sum([letterX, letterY])
+            letterZ = letterZ/5
+            final = sum([letterX, letterZ])
 
         print(f"[!] Resultado final: {final}")
         print(f"[!] X: {letterX}, Y: {letterY}, Z: {letterZ}")
