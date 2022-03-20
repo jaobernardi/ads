@@ -1,7 +1,3 @@
-import typing
-# Calculador de média ponderada.
-
-
 # Input getter
 def get_input(message, set_type, tries=10):
     while tries >= 0:
@@ -16,22 +12,6 @@ def get_input(message, set_type, tries=10):
     # Return none if there was no successful input.
     return None
 
-
-def calculate_average(items: list):
-    """
-    Calculate the weighted average.
-
-    Params:
-        items: List.
-    """
-    bottom = 0
-    top = 0 
-    for v, w in items:
-        bottom += w
-        top += v*w
-    return top/bottom
-
-
 def main():
     items = []
 
@@ -40,28 +20,24 @@ def main():
     amount = get_input("[?] Quantos items serão informados: ", int)
     if not amount:
         # Quit if it failed to get amount.
-        print("Falha ao processar a quantidade de itens.")
+        print("[!] Falha ao processar a quantidade de itens.")
         return
     
     # Get per item info.
     for index in range(amount):
-        print("\n")  
-        print(f"[!] Informações sobre o item #{index+1}")
-
         # Get item's info.
         value = get_input("[?] Valor do item: ", float)
-        weight = get_input("[?] Peso do item: ", float) if value else None
-        if value == None or weight == None:
+        if value == None:
             # Quit if info is trash
             print("Falha ao processar as informações do item.")
             return
 
         # Add it to the list
-        items.append([value, weight])
+        items.append(value)
 
-    # Calculate the average
-    total_value = calculate_average(items)
-    print(f"[!] Média final será de: {total_value}")
+    # Get the smallest
+    min_value = min(items)
+    print(f"[!] Menor número é: {min_value}")
     return
 
 
