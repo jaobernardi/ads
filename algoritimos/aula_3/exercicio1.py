@@ -1,3 +1,5 @@
+import sys
+
 # Input getter
 def get_input(message, set_type, tries=10):
     while tries >= 0:
@@ -11,6 +13,12 @@ def get_input(message, set_type, tries=10):
             tries -= 1
     # Return none if there was no successful input.
     return None
+
+def check_version():
+    version = sys.version_info
+    if version.major != 3 or version.minor <= 10:
+        print("[!] Não será possível executar esse código pois a versão do seu intepretador é inferior à 3.10.")
+        sys.exit(0)
 
 def main():
     gas_types = {
@@ -53,4 +61,5 @@ def main():
 
 
 if __name__ == "__main__":
+    check_version()
     main()
