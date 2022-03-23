@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinculando CSS Scope</title>
+</head>
+<body>
+    <style scoped>
+        body {
+            background-color: #05a4e7;
+        }
+    </style>
+    <div>
+        <style scoped>
+            p {
+                color: #fff;
+                text-align: center;
+            }
+        </style>
+        <p>CSS Scopped!</p>
+        <p>Lorem ipsum etc</p>
+    </div>
+</body>
+</html>

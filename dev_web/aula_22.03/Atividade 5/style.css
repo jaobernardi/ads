@@ -1,0 +1,55 @@
+.container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+ol {
+    padding-top: 0.25rem;
+    margin: 0%;
+    padding-left: 5rem;
+}
+
+table {
+    line-height: normal;
+}
+
+thead {
+    background-color: rgb(39, 29, 95);
+}
+
+th {
+    color: white
+}
+
+.tab {
+    padding-left: 1.5rem;
+}
+
+.spaced {
+    color: #975B32;
+    letter-spacing: 1rem;
+    
+}
+
+b {
+    font-size: 1.15rem;
+}
+
+* {
+    color: #44443ecc
+}
+
+p {
+    margin: 0%;
+    font-size: 1.05rem;    
+}
+
+body {
+    background-color: #D0BFA7;
+}
+
+a {
+    text-decoration: none;
+    color: #66a362
+}
