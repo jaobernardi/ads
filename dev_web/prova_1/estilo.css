@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body {
+    background-color: #D0BFA7;
+}
+
+* {
+    font-family: Roboto;
+}
+/* Form stuff */
+
+.form p {
+    font-size: 1.2rem;
+    color: rgb(70, 70, 70)
+}
+
+.form .action_buttons input {
+    background-color: orange;
+    color: white;
+    font-size: 2rem;
+    margin-right: .25rem;
+}
+
+.form .action_buttons input:hover {
+    background-color: rgb(231, 191, 80);
+    color: white;
+    font-size: 2.5rem;
+    margin-right: .25rem;
+}
+
+.form label p {
+    line-height: 0rem;
+}
+
+.form table td:first-child input {
+    width: 20rem;
+}
+
+.form input {
+    font-size: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    border: none;
+    filter: drop-shadow(.15rem .15rem .15rem rgb(122, 122, 122));
+}
+
+.form form td {
+    padding-right: 2rem;
+}
+
+/* Homepage stuff */
+.home p {
+    font-size: .98rem;
+    color: #771b1f
+}
+
+.home .footer * {
+    display: block;
+    margin: 0 auto;
+}
+
+.home h1 {
+    font-size: 1.5rem;
+    color: #5f5425
+}
+
+.home .mydata p {
+    text-align: left;
+    line-height: 0.25rem;
+}
+
+.home .fav_books table p {
+    line-height: 0rem;
+}
+
+.home .fav_books table caption {
+    color: #771b1f; 
+}
+
+.home .fav_books table {
+    border: 1px solid black;
+    width: 75%;
+}
+
+.home .fav_books table thead tr {
+    background-color: yellow;
+}
+
+.home .iframe iframe {
+    width: 75%;
+    height: 50rem;
+}
+
+.home .header p  {
+    text-align: left;
+    line-height: 0.25rem;
+}
