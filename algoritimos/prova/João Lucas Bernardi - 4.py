@@ -34,7 +34,7 @@ def main():
     minimal_index = 0
     for i in range(len(cotacoes)):
         if cotacoes[i] == minimal:
-            minimal_index = index
+            minimal_index = i+1
             trues[i] = True
     
     if all(trues):
