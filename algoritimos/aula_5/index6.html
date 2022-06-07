@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>JQuery</h1>
+        <form>
+            </p>Name:
+            <input type="text" name="name" id="name"></p>
+            </p>Address:
+            <input type="text" name="endereco" id="endereco"></p>
+            </p>Cidade:
+            <input type="text" name="cidade" id="cidade"></p>
+        </form>
+        <button id="showname">Mostrar Valor</button>
+    </div>
+    <script>
+        function toTitleCase(str) {
+            return str.replace(
+                /\w\S*/g,
+                function(txt) {
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                }
+            );
+            }
+        $(document).ready(()=> {
+            let html = $("button#html");
+            $("button#showname").click(() => {
+                let data = $("form").serializeArray();
+                out = ""
+                data.forEach(e => {
+                    out += `${toTitleCase(e['name'])}: ${e['value']}\n`
+                })
+                alert(out)
+            })
+        })
+    </script>
+</body>
+</html>

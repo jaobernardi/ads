@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Jquery</h1>
+        <p>Esse texto vai desaparecer usando o seletor de Elemento.</p>
+        <p id="disappear">Esse texto vai desaparecer usando o seletor de ID</p>
+        <p class="disappear">Esse texto vai desaparecer usando o seletor de Classe.</p>
+    </div>
+    <script>
+        $(document).ready(() => {
+            console.log('1')
+            let first_p = $("p:first");
+            let id_p = $("p#disappear");
+            let class_p = $("p.disappear")
+            first_p.click(() => {
+                first_p.hide();
+            });
+
+            class_p.click(() => {
+                class_p.fadeOut(1000);
+            })
+
+            id_p.click(() => {
+                id_p.animate({
+                    opacity: 1,
+                    left: "+=50",
+                    height: "toggle"
+                }, 2000, ()=>{});
+            })
+        })
+    </script>
+</body>
+</html>
