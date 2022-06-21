@@ -25,7 +25,7 @@ $(document).ready(e => {
                 toastElList.forEach(e => e.innerText = data);
                 toastList.forEach(e => e.show())
             } else {
-                window.location = '..'
+                window.location = '/home'
             }
         })
         e.preventDefault();

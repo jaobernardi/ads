@@ -15,7 +15,7 @@
     <!-- //================================================== -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
     <link href="assets/css/home.css" rel="stylesheet">
-
+    <script src="assets/js/homeUtils.js"></script>
     <!-- //================================================== -->
     <script>
         $(document).ready(function () {
@@ -46,16 +46,8 @@
 
     <br>
 
-    <h2 class="text-center text-light" id="name">Olá ${username}, seja bem-vindo(a)!</h2>
-    <script>
-        $(document).ready(e => {
-            window.cookieStore.get('SessionNAME')
-            .then(cookie => {
-                $("body")[0].innerHTML = $("body")[0].innerHTML.replaceAll('${username}', cookie.value)
-            })
-            
-        })
-    </script>
+    <h2 class="text-center text-light">Olá ${username}, seja bem-vindo(a)!</h2>
+
     <br>
 
     <div class="text-center text-light">

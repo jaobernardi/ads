@@ -3,7 +3,7 @@
 */
 const { User } = require('../structures')
 const _data = {
-    users: {'admin': {password: 'password', name: 'Administrador'}},
+    users: {'admin': {password: '123', name: 'Administrador'}},
     tokens: {'token': 'username'}
 }
 
