@@ -18,3 +18,11 @@ body {
 .card-custom {
     background-color: rgb(50, 50, 50) !important;
 }
+
+.ptn-custom:hover, .ptn-custom {
+    cursor: default !important;
+}
+
+a:hover {
+    cursor: pointer !important
+}

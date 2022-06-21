@@ -26,4 +26,4 @@ app.use('/', html_router)
 app.use('/assets', assets_router)
 app.use('/api', api_router)
 
-app.listen(80, '0.0.0.0')
+app.listen(3000, '0.0.0.0')

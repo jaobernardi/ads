@@ -15,15 +15,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/index.css">
     <!-- <link rel="stylesheet" href="assets/css/home.css"> -->
 </head>
 
-<body>
+<body class="text-light">
+    
     <div class="container-fluid px-0">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo.png" class="img-fluid" width="32" alt="Logo">
+                    <a class="nav-link px-2 text-secondary ptn-custom">Index</a>
+                    <a class="nav-link"><a onclick="clickHome();">Home</a></a>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -32,31 +36,30 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link logged" href="/login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre Nós</a>
-                        </li>
-                        <li class="nav-item">
+                    <ul class="navbar-nav ml-auto mt-auto">
+
+                        <!-- <li class="nav-item ml-2 mt-auto">
                             <p class="nav-link">|</p>
-                        </li>
-                        <li class="nav-item">
+                        </li> -->
+                        <li class="nav-item mt-auto mr-3">
                             <b class="nav-link">Conectado como ${username}</b>
+                        </li>
+                        <li class="nav-item mt-auto">
+                            <button type="button" class="btn btn-custom text-white" onclick="location.href='/login'">Login</button>
                         </li>
                     </ul>
                 </div>
             </nav>
 
             <div class="jumbotron p-5 m-0" style='background-image: linear-gradient(
-                to left, transparent, #fff
+                to left, transparent, #000
               ), url("assets/img/iceg_entrada.jpg"); background-size: cover; background-position: -20%;'>
 
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-10">
                             <h1 class="display-4">Instituto de Tecnologia</h1>
+                            <hr>
                         </div>
 
                         <div class="col-2">

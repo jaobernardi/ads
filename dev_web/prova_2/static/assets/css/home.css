@@ -16,3 +16,10 @@
     background-color: rgb(144, 93, 249) !important;
 } 
 
+.border-custom {
+    border-color: rgb(144, 93, 249) !important;
+}
+
+.card-custom {
+    background-color: rgb(50, 50, 50) !important;
+}
