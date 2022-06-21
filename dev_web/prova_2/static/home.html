@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- //================================================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- //================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- //================================================== -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link href="assets/css/home.css" rel="stylesheet">
+
+    <!-- //================================================== -->
+    <script>
+        $(document).ready(function () {
+            $("#mapa").hide();
+
+            $("#btn_mapa").click(function () {
+                $("#mapa").toggle();
+            });
+        });
+    </script>
+
+    <!-- //================================================== -->
+</head>
+
+<body>
+    <!-- //================================================== -->
+    <!-- <div style="display: none" id="logged" name="logged"></div> -->
+
+    <div class="d-flex h-100 text-center text-white bg-dark">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <main class="px-3">
+                <img src="assets/img/logo.png" alt="" width="200" height="173">
+                <h1>ITec UPF</h1>
+                <p class="lead">Instituto de Tecnologia UPF</p>
+            </main>
+        </div>
+    </div>
+
+    <br>
+
+    <h2 class="text-center text-light" id="name">Olá ${username}, seja bem-vindo(a)!</h2>
+    <script>
+        $(document).ready(e => {
+            window.cookieStore.get('SessionNAME')
+            .then(cookie => {
+                $("body")[0].innerHTML = $("body")[0].innerHTML.replaceAll('${username}', cookie.value)
+            })
+            
+        })
+    </script>
+    <br>
+
+    <div class="text-center text-light">
+    <h4><u>Cursos que farão parte do ITec:</u></h4>
+
+    <h4>- Graduação:</h4>
+    <p>• Análise e Desenvolvimento de Sistemas (CST)</p>
+    <p>• Arquitetura e Urbanismo (B)</p>
+    <p>• Ciência da Computação (B)</p>
+    <p>• Engenharia Ambiental e Sanitária (B)</p>
+    <p>• Engenharia Civil (B)</p>
+    <p>• Engenharia de Computação (B)</p>
+    <p>• Engenharia de Produção (B)</p>
+    <p>• Engenharia Elétrica (B)</p>
+    <p>• Engenharia Mecânica (B)</p>
+    <p>• Engenharia Química (B)</p>
+    <p>• Fabricação Mecânica (CST)</p>
+
+    <h4>- Pós-Graduação:</h4>
+    <p>• Mestrado em Projeto e Processos de Fabricação</p>
+    <p>• Mestrado em Computação Aplicada</p>
+    <p>• Mestrado e Doutorado em Engenharia Civil e Ambiental</p>
+    <p>E mais diversos cursos de Lato Sensu (Especializações e MBAs)...</p>
+    </div>
+
+    <hr class="my-4 text-light">
+
+    <div class="text-center text-light">
+        <h4>Mapa da UPF (PRÉ-REESTRUTURAÇÃO ITEC)</h4>
+        <br>
+        <button class="w-10 btn btn-lg btn-primary btn-custom" id="btn_mapa">Mostrar/Esconder</button>
+        <br>
+        <br>
+        <div id="mapa">
+            <img src="assets/img/mapa_upf_preitec.jpg" alt="" width="1500" height="1011">
+        </div>
+    </div>
+
+    <hr class="my-4 text-light">
+
+    <!-- //================================================== -->
+    <!--
+        // UPF - Análise e Desenvolvimento de Sistemas - 2022/1
+        // Desenvolvimento para Web - Trabalho Final
+        // Alunos: Ayesa dos Santos (Matrícula: 155596) e João Lucas Bernardi (Matrícula: 192234)
+    -->
+    <!-- //================================================== -->
+</body>
+</html>

@@ -1,18 +1,16 @@
 const { concedeToken } = require('../database')
 
 class User {
-    constructor(username, password) {
+    constructor(username, password, name) {
         this.username = username;
         this.password = password;
+        this.name = name;
     }
 
     checkPassword(pass) {
         return pass === this.password
     }
 
-    concedeToken() {
-        return concedeToken(this.username);
-    }
 
 }
 

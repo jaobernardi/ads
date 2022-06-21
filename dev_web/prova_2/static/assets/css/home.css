@@ -1,0 +1,25 @@
+/* body {
+    background-color: rgb(30,30,30) !important;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+    max-width: 42em;
+}
+
+.btn-custom {
+    background-color: rgb(116, 49, 249) !important;
+}
+
+.btn-custom:hover {
+    background-color: rgb(144, 93, 249) !important;
+} */
+
+.image_fade {
+    background-color: #837960;
+    background-image: linear-gradient(
+      to bottom, transparent, #837960
+    ), url("assets/img/iceg_entrada.jpg");
+    background-repeat: no-repeat;
+}

@@ -1,12 +1,14 @@
 const path = require('path')
 const express = require('express');
 const html_router = express.Router();
+const { getUserFromToken } = require('../database/')
 
 html_router.get("/", (req, res) => {
     res.sendFile(path.resolve(path.join(
         'static',
-        'home.html'
+        'index.html'
     )))
+
 })
 
 
@@ -18,10 +20,10 @@ html_router.get("/login", (req, res) => {
 })
 
 
-html_router.get("/cadastro", (req, res) => {
+html_router.get("/auto-cadastro", (req, res) => {
     res.sendFile(path.resolve(path.join(
         'static',
-        'cadastro.html'
+        'auto-cadastro.html'
     )))
 })
 

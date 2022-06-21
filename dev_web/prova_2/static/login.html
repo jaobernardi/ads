@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- //================================================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- //================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- //================================================== -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link href="assets/css/login.css" rel="stylesheet">
+
+    <!-- //================================================== -->
+    <script src="assets/js/loginUtils.js"></script>
+    <!-- //================================================== -->
+</head>
+
+<body class="text-center">
+    <!-- //================================================== -->
+    <main class="form-signin w-100 m-auto">
+        <form id='login_form'>
+            <img class="mb-4" src="assets/img/logo.png" alt="" width="200" height="173">
+            <h1 class="h3 mb-3 fw-normal text-light">Login</h1>
+
+            <div class="form-floating text-light">
+                <input type="text" class="form-control form-dark" id="username" placeholder="Usuário">
+                <label for="username">Usuário</label>
+            </div>
+            <div class="form-floating text-light">
+                <input type="password" class="form-control form-dark" id="password" placeholder="Senha">
+                <label for="password">Senha</label>
+            </div>
+
+            <div class="checkbox mb-3">
+                <label>
+                    <a href="auto-cadastro.html">Clique p/ acessar o AUTO-CADASTRO</a>
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary btn-custom" type="submit">Logar</button>
+        </form>
+        <br>
+        <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Fechar"></button>
+            </div>
+        </div>
+    </main>
+
+    <!-- //================================================== -->
+    <!--
+        // UPF - Análise e Desenvolvimento de Sistemas - 2022/1
+        // Desenvolvimento para Web - Trabalho Final
+        // Alunos: Ayesa dos Santos (Matrícula: 155596) e João Lucas Bernardi (Matrícula: 192234)
+    -->
+    <!-- //================================================== -->
+</body>
+</html>
