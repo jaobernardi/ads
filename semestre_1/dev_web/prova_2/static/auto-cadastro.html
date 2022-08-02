@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- //================================================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Cadastro</title>
+
+    <!-- //================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- //================================================== -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link href="assets/css/auto-cadastro.css" rel="stylesheet">
+
+    <!-- //================================================== -->
+    <script>
+        const toastTrigger = document.getElementById('toastBtn')
+        const toastLiveExample = document.getElementById('toast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', () => {
+                const toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
+    </script>
+
+    <!-- //================================================== -->
+</head>
+
+<body>
+    <!-- //================================================== -->
+    <div class="container text-light w-50">
+        <main>
+            <div class="py-5 text-center">
+                <img src="assets/img/logo.png" alt="" width="200" height="173">
+            </div>
+
+            <form class="needs-validation" novalidate>
+                <div class="row g-3">
+
+                    <h4 class="text-center">AUTO-CADASTRO</h4>
+
+                    <hr class="my-4">
+
+                    <div class="col-12">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Nome" value="" required>
+                        <div class="invalid-feedback">
+                            Insira um nome válido.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="endereco" class="form-label">Endereço:</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Rua ABC, Número 123" required>
+                        <div class="invalid-feedback">
+                            Insira um endereço válido.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="cidade" class="form-label">Cidade:</label>
+                        <select class="form-select" id="cidade" required>
+                            <option value="">Escolha...</option>
+                            <option>Passo Fundo - RS</option>
+                            <option>Tapejara - RS</option>
+                            <option>Florianópolis - SC</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Escolha uma cidade válida.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="datanasc" class="form-label">Data de Nascimento:</label>
+                        <input type="date" class="form-control" id="datanasc" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Selecione uma data válida.
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <button class="w-100 btn btn-custom btn-lg" type="submit" id="toastBtn">Cadastrar</button>
+            </form>
+
+            <br>
+            <div class="toast mx-auto tst-custom" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        Cadastro OK.
+                    </div>
+                    <button type="button" class="btn-close btn-close-black me-2 m-auto" data-bs-dismiss="toast" aria-label="Fechar"></button>
+                </div>
+            </div>
+
+            <br>
+
+            <script src="assets/js/form-validation.js"></script>
+        </main>
+    </div>
+
+    <!-- //================================================== -->
+    <!--
+        // UPF - Análise e Desenvolvimento de Sistemas - 2022/1
+        // Desenvolvimento para Web - Trabalho Final
+        // Alunos: Ayesa dos Santos (Matrícula: 155596) e João Lucas Bernardi (Matrícula: 192234)
+    -->
+    <!-- //================================================== -->
+</body>
+</html>
