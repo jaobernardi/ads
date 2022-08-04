@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "space.jaobernardi.upf.oop.aula_1.App",
+            "projectName": "aula_1"
+        },
+        {
             "name": "Python: Arquivo Atual",
             "type": "python",
             "request": "launch",
@@ -21,6 +28,5 @@
             ],
             "type": "node"
         }
-
     ]
 }
