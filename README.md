@@ -16,4 +16,4 @@
     - [`Desenvolvimento Web e Bancos de Dados`](/semestre_2/Desenvolvimento%20Web%20e%20Bancos%20de%20Dados/)
     - [`Programação Orientada à Objetos`](/semestre_2/OOP/)
         - [`Aula 1`](/semestre_2/OOP/aula_1/)
-    - [`Desenvolvimento Mobile`](/semestre_2/Desenvolvimento Mobile/)
+    - [`Desenvolvimento Mobile`](/semestre_2/Desenvolvimento%20Mobile/)
