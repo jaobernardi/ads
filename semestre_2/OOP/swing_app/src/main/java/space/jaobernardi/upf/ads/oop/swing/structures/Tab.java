@@ -6,9 +6,19 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
 public class Tab {
-    
-    public void addToPane(JTabbedPane pane) {
-        pane.addTab(getName(), null, makePanel(), getName());
+
+    private JTabbedPane pane;
+ 
+    public Tab(JTabbedPane pane) {
+        this.pane = pane;
+    }
+
+    public void addToPane(JTabbedPane tabbedpane) {
+        tabbedpane.addTab(getName(), null, makePanel(), getName());
+    }
+
+    public void register() {
+        this.addToPane(pane);
     }
 
     public JComponent makePanel() {
